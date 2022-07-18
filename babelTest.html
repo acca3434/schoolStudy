@@ -6,7 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    
-</body>
+<div id="output"></div>
+<!-- Load Babel -->
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<!-- Your custom script here -->
+<script type="text/babel">
+const getMessage = () => "Hello World";
+document.getElementById('output').innerHTML = getMessage();
+</script>
+</body>
 </html>
